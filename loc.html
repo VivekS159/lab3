@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssindex.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar bg-dark font-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color:aliceblue">WeWorkout</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"style="color:aliceblue">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item" >
+                            <a class="nav-link active"  style="color:aliceblue" aria-current="page" href="#">Home </a>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class=" text-white text-center py-3" style="background-color: aquamarine;">
+            <h1>WeWorkout</h1>
+            <img src="dino.svg" height="10%" width="10%" alt="">
+        </div>
+    </header>
+    
+        <!-- Replace with your latitude and longitude -->
+        <p>Click <a id="map-link" href="#">here</a> to navigate to Google Maps.</p>
+    
+        <script>
+            // Function to open Google Maps with specified coordinates
+            function openGoogleMaps() {
+                // Replace with your latitude and longitude
+                var latitude = 40.7852234;
+                var longitude = -73.9784612;
+                
+                // Construct Google Maps URL with the coordinates
+                var googleMapsUrl = 'https://maps.app.goo.gl/4SJHpMDBXnWvhajp8';
+                
+                // Open Google Maps in a new tab/window
+                window.open(googleMapsUrl, '_blank');
+            }
+    
+            // Attach click event to the link
+            document.getElementById('map-link').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                openGoogleMaps(); // Call function to open Google Maps
+            });
+        </script>
+    
+</body>
+</html>

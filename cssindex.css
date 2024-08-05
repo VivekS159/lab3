@@ -1,0 +1,34 @@
+body {
+    background: url('Premium\ Photo\ _\ White\ crumpled\ paper\ sheet\,\ background\ for\ design.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color:white ;
+}
+
+footer {
+    background color:
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-style: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.carousel {
+    height: 50%;
+    width: 50%;
+}
+
+.carousel-inner img {
+    height: 50%;
+    width: 50%;
+}
